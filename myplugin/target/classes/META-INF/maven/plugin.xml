@@ -7,7 +7,7 @@
   <description></description>
   <groupId>ml</groupId>
   <artifactId>myplugin</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>0.1-SNAPSHOT</version>
   <goalPrefix>my</goalPrefix>
   <isolatedRealm>false</isolatedRealm>
   <inheritedByDefault>true</inheritedByDefault>
