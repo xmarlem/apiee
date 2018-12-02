@@ -13,13 +13,14 @@
 
     <properties>
         <pippo.pluto>1.2</pippo.pluto>
+        <project.scm.id>deploymentRepo</project.scm.id>
 
     </properties>
 
 
     <repositories>
         <repository>
-            <id>wso2-nexus</id>
+            <id>wsogit 2-nexus</id>
             <name>WSO2 internal repository</name>
             <url>http://maven.wso2.org/nexus/content/
                 groups/wso2-public/</url>
@@ -29,14 +30,18 @@
                 <checksumPolicy>ignore</checksumPolicy>
             </releases>
         </repository>
+        <repository>
+            <id>localDeploy</id>
+            <url>file:///Users/marco/Documents/Progetti/tmp/releases</url>
+        </repository>
 
     </repositories>
 
     <scm>
         <url>https://github.com/xmarlem/apiee</url>
-        <connection>scm:git:git://github.com:xmarlem/apiee.git</connection>
-        <developerConnection>scm:git:git://github.com:xmarlem/apiee.git</developerConnection>
-        <tag>0.1.0</tag>
+        <connection>scm:git:https://github.com:xmarlem/apiee.git</connection>
+        <developerConnection>scm:git:https://github.com:xmarlem/apiee.git</developerConnection>
+        <tag>0.1</tag>
     </scm>
 
 

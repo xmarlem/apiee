@@ -7,7 +7,7 @@
   <description></description>
   <groupId>ml</groupId>
   <artifactId>myplugin</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.1</version>
   <goalPrefix>my</goalPrefix>
   <mojos>
     <mojo>
