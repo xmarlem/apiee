@@ -7,18 +7,18 @@
     <packaging>pom</packaging>
     <version>0.8-SNAPSHOT</version>
 
-    <modules>
-        <module>myplugin</module>
-    </modules>
-
     <properties>
         <project.scm.id>deploymentRepo</project.scm.id>
     </properties>
 
     <distributionManagement>
-        <repository>
+        <snapshotRepository>
             <id>nexus</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
     </distributionManagement>
 
@@ -47,31 +47,9 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.github.xmarlem</groupId>
-                <artifactId>myplugin</artifactId>
-                <version>0.8-SNAPSHOT</version>
-                <executions>
-                    <execution>
-                        <id>default-verify</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>touch</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
-                <configuration>
-                    <goals>pre-integration-test</goals>
-                    <preparationGoals>package</preparationGoals>
-                    <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-                    <tagNameFormat>@{project.version}</tagNameFormat>
-                    <remoteTagging>false</remoteTagging>
-                </configuration>
             </plugin>
         </plugins>
     </build>
