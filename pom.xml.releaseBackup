@@ -34,9 +34,9 @@
 
     <scm>
         <url>https://github.com/xmarlem/apiee</url>
-        <connection>scm:git:https://github.com:xmarlem/apiee.git</connection>
-        <developerConnection>scm:git:https://github.com:xmarlem/apiee.git</developerConnection>
-        <tag>0.1</tag>
+        <connection>scm:git:git://github.com:xmarlem/apiee.git</connection>
+        <developerConnection>scm:git:git://github.com:xmarlem/apiee.git</developerConnection>
+        <tag>0.1.0</tag>
     </scm>
 
 
