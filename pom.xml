@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ml</groupId>
+    <artifactId>myproj</artifactId>
+    <packaging>pom</packaging>
+    <version>1.2-SNAPSHOT</version>
+
+    <modules>
+        <module>myplugin</module>
+    </modules>
+
+    <properties>
+        <pippo.pluto>1.2</pippo.pluto>
+
+    </properties>
+
+
+    <repositories>
+        <repository>
+            <id>wso2-nexus</id>
+            <name>WSO2 internal repository</name>
+            <url>http://maven.wso2.org/nexus/content/
+                groups/wso2-public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+
+    </repositories>
+
+    <scm>
+        <url>https://github.com/xmarlem/apiee</url>
+        <connection>scm:git:git://github.com:xmarlem/apiee.git</connection>
+        <developerConnection>scm:git:git://github.com:xmarlem/apiee.git</developerConnection>
+        <tag>${project.version}</tag>
+    </scm>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>ml</groupId>
+                <artifactId>myplugin</artifactId>
+                <version>1.2-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <id>default-verify</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>touch</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <goals>pre-integration-test</goals>
+                    <preparationGoals>package</preparationGoals>
+                    <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
+                    <tagNameFormat>@{project.version}</tagNameFormat>
+                    <remoteTagging>false</remoteTagging>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
