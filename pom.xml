@@ -5,7 +5,7 @@
     <groupId>ml</groupId>
     <artifactId>myproj</artifactId>
     <packaging>pom</packaging>
-    <version>0.6</version>
+    <version>0.7-SNAPSHOT</version>
 
     <modules>
         <module>myplugin</module>
@@ -40,7 +40,7 @@
         <url>https://github.com/xmarlem/apiee</url>
         <connection>scm:git:https://github.com/xmarlem/apiee.git</connection>
         <developerConnection>scm:git:https://github.com/xmarlem/apiee.git</developerConnection>
-        <tag>0.6</tag>
+        <tag>0.2</tag>
     </scm>
 
 
