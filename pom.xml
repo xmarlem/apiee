@@ -5,7 +5,7 @@
     <groupId>ml</groupId>
     <artifactId>myproj</artifactId>
     <packaging>pom</packaging>
-    <version>0.5-SNAPSHOT</version>
+    <version>0.5.1-SNAPSHOT</version>
 
     <modules>
         <module>myplugin</module>
@@ -15,6 +15,12 @@
         <project.scm.id>deploymentRepo</project.scm.id>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>localDeploy</id>
+            <url>file:///Users/marco/Documents/Progetti/tmp/releases</url>
+        </repository>
+    </distributionManagement>
 
     <repositories>
         <repository>
@@ -28,11 +34,6 @@
                 <checksumPolicy>ignore</checksumPolicy>
             </releases>
         </repository>
-        <repository>
-            <id>localDeploy</id>
-            <url>/Users/marco/Documents/Progetti/tmp/releases</url>
-        </repository>
-
     </repositories>
 
     <scm>
