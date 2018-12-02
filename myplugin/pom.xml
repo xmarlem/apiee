@@ -2,11 +2,12 @@
     <parent>
         <artifactId>myproj</artifactId>
         <groupId>ml</groupId>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.5.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>ml</groupId>
     <artifactId>myplugin</artifactId>
+  <version>0.5</version>
     <packaging>maven-plugin</packaging>
     <name>myplugin Maven Mojo</name>
     <url>http://maven.apache.org</url>
@@ -41,4 +42,8 @@
         </dependency>
     </dependencies>
 
+
+  <scm>
+    <tag>0.5.1</tag>
+  </scm>
 </project>
