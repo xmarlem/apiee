@@ -5,7 +5,7 @@
     <groupId>com.github.xmarlem</groupId>
     <artifactId>myproj</artifactId>
     <packaging>pom</packaging>
-    <version>0.8-SNAPSHOT</version>
+    <version>0.8</version>
 
     <properties>
         <project.scm.id>deploymentRepo</project.scm.id>
@@ -40,7 +40,7 @@
         <url>https://github.com/xmarlem/apiee</url>
         <connection>scm:git:https://github.com/xmarlem/apiee.git</connection>
         <developerConnection>scm:git:https://github.com/xmarlem/apiee.git</developerConnection>
-        <tag>0.2</tag>
+        <tag>myproj-0.8</tag>
     </scm>
 
 
