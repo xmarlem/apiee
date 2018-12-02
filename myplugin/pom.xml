@@ -2,12 +2,12 @@
     <parent>
         <artifactId>myproj</artifactId>
         <groupId>com.github.xmarlem</groupId>
-        <version>0.7-SNAPSHOT</version>
+        <version>0.7</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.xmarlem</groupId>
     <artifactId>myplugin</artifactId>
-  <version>0.7-SNAPSHOT</version>
+  <version>0.7</version>
     <packaging>maven-plugin</packaging>
     <name>myplugin Maven Mojo</name>
     <url>http://maven.apache.org</url>
