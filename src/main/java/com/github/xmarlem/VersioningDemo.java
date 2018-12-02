@@ -1,4 +1,4 @@
-package ml;
+package com.github.xmarlem;
 
 public class VersioningDemo {
     public static void main(String args[]){

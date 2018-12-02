@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ml</groupId>
+    <groupId>com.github.xmarlem</groupId>
     <artifactId>myproj</artifactId>
     <packaging>pom</packaging>
     <version>0.7-SNAPSHOT</version>
@@ -18,7 +18,7 @@
     <distributionManagement>
         <repository>
             <id>nexus</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
     </distributionManagement>
 
@@ -47,9 +47,9 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>ml</groupId>
+                <groupId>com.github.xmarlem</groupId>
                 <artifactId>myplugin</artifactId>
-                <version>1.2-SNAPSHOT</version>
+                <version>0.7-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <id>default-verify</id>
