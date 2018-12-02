@@ -30,7 +30,7 @@
         </repository>
         <repository>
             <id>localDeploy</id>
-            <url>file:///Users/marco/Documents/Progetti/tmp/releases</url>
+            <url>/Users/marco/Documents/Progetti/tmp/releases</url>
         </repository>
 
     </repositories>
