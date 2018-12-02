@@ -17,8 +17,8 @@
 
     <distributionManagement>
         <repository>
-            <id>localDeploy</id>
-            <url>file:///Users/marco/Documents/Progetti/tmp/releases</url>
+            <id>nexus</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
     </distributionManagement>
 
